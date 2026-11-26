@@ -1,0 +1,29 @@
+{
+  "dataset": "CarlaSC Cartesian",
+  "checkpoint": "discrete_diffusion.tar",
+  "seed": 44,
+  "shape_xyz": [
+    128,
+    128,
+    8
+  ],
+  "batch_size": 1,
+  "diffusion_steps": 100,
+  "label_counts": [
+    117582,
+    406,
+    272,
+    58,
+    13,
+    50,
+    6439,
+    1551,
+    3173,
+    1418,
+    110
+  ],
+  "elapsed_s": 15.916,
+  "peak_allocated_mib": 531,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "torch": "2.11.0+cu128"
+}

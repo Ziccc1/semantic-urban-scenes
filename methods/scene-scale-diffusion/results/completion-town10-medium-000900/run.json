@@ -1,0 +1,110 @@
+{
+  "dataset": "CarlaSC Cartesian Test",
+  "frame": {
+    "archive_url": "https://curly-dataset-public.s3.us-east-2.amazonaws.com/CARLA/test_cartesian.zip",
+    "archive_members": {
+      "velodyne.bin": "Cartesian/Test/Town10_Medium/cartesian/velodyne/000900.bin",
+      "ground_truth.label": "Cartesian/Test/Town10_Medium/cartesian/evaluation/000900.label",
+      "eval_counts.bin": "Cartesian/Test/Town10_Medium/cartesian/evaluation/000900.bin",
+      "params.json": "Cartesian/Test/Town10_Medium/cartesian/evaluation/params.json"
+    },
+    "scene": "Cartesian/Test/Town10_Medium/cartesian",
+    "frame": "000900"
+  },
+  "checkpoint": "conditional_discrete_diffusion.tar",
+  "seed": 42,
+  "batch_size": 1,
+  "diffusion_steps": 100,
+  "shape_xyz": [
+    128,
+    128,
+    8
+  ],
+  "observed_occupied_voxels": 6487,
+  "elapsed_s": 15.254,
+  "peak_allocated_mib": 540,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "torch": "2.11.0+cu128",
+  "evaluation_mask": "Official evaluation counts > 0. Ignore counts == 0.",
+  "semantic_average": "Mean over remapped IDs 1-10 with nonzero union; exclude Free (0).",
+  "valid_voxels": 116786,
+  "ignored_voxels": 14286,
+  "occupancy_iou": 0.8529174942294272,
+  "occupancy_tp": 15889,
+  "occupancy_fp": 792,
+  "occupancy_fn": 1948,
+  "semantic_miou": 0.3776800450182061,
+  "classes_in_miou": 10,
+  "per_class_iou": [
+    {
+      "id": 1,
+      "name": "Building",
+      "intersection": 1384,
+      "union": 2767,
+      "iou": 0.500180701120347
+    },
+    {
+      "id": 2,
+      "name": "Barrier",
+      "intersection": 0,
+      "union": 390,
+      "iou": 0.0
+    },
+    {
+      "id": 3,
+      "name": "Other",
+      "intersection": 210,
+      "union": 745,
+      "iou": 0.28187919463087246
+    },
+    {
+      "id": 4,
+      "name": "Pedestrian",
+      "intersection": 0,
+      "union": 1,
+      "iou": 0.0
+    },
+    {
+      "id": 5,
+      "name": "Pole",
+      "intersection": 111,
+      "union": 229,
+      "iou": 0.4847161572052402
+    },
+    {
+      "id": 6,
+      "name": "Road",
+      "intersection": 5420,
+      "union": 6440,
+      "iou": 0.8416149068322981
+    },
+    {
+      "id": 7,
+      "name": "Ground",
+      "intersection": 6,
+      "union": 141,
+      "iou": 0.0425531914893617
+    },
+    {
+      "id": 8,
+      "name": "Sidewalk",
+      "intersection": 6679,
+      "union": 8684,
+      "iou": 0.7691156149239982
+    },
+    {
+      "id": 9,
+      "name": "Vegetation",
+      "intersection": 50,
+      "union": 173,
+      "iou": 0.28901734104046245
+    },
+    {
+      "id": 10,
+      "name": "Vehicle",
+      "intersection": 394,
+      "union": 694,
+      "iou": 0.5677233429394812
+    }
+  ]
+}

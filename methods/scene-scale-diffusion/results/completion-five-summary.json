@@ -1,0 +1,241 @@
+{
+  "settings": {
+    "dataset": "CarlaSC Cartesian Test",
+    "checkpoint": "conditional_discrete_diffusion.tar",
+    "seed": 42,
+    "batch_size": 1,
+    "diffusion_steps": 100,
+    "shape_xyz": [
+      128,
+      128,
+      8
+    ],
+    "evaluation_mask": "Official evaluation counts > 0. Ignore counts == 0.",
+    "semantic_average": "Mean over remapped IDs 1-10 with nonzero union; exclude Free (0)."
+  },
+  "frames": [
+    {
+      "sequence": "Town10_Heavy",
+      "frame": "000000",
+      "run_path": "completion-town10-heavy-000000/run.json",
+      "valid_voxels": 119994,
+      "ignored_voxels": 11078,
+      "observed_occupied_voxels": 7564,
+      "elapsed_s": 15.876,
+      "occupancy_iou": 0.8197513464539186,
+      "semantic_miou": 0.3928907644916117,
+      "classes_in_miou": 10,
+      "class_iou": {
+        "Building": 0.510375939849624,
+        "Barrier": 0.0,
+        "Other": 0.2236842105263158,
+        "Pedestrian": 0.5205479452054794,
+        "Pole": 0.3532934131736527,
+        "Road": 0.8224700824909957,
+        "Ground": 0.28752642706131076,
+        "Sidewalk": 0.715117169551233,
+        "Vegetation": 0.0,
+        "Vehicle": 0.4958924570575056
+      }
+    },
+    {
+      "sequence": "Town10_Heavy",
+      "frame": "000600",
+      "run_path": "completion-town10-heavy-000600/run.json",
+      "valid_voxels": 103106,
+      "ignored_voxels": 27966,
+      "observed_occupied_voxels": 5941,
+      "elapsed_s": 15.757,
+      "occupancy_iou": 0.7411794740873117,
+      "semantic_miou": 0.3651970933036526,
+      "classes_in_miou": 10,
+      "class_iou": {
+        "Building": 0.30383646037524503,
+        "Barrier": 0.0,
+        "Other": 0.06986899563318777,
+        "Pedestrian": 0.4675324675324675,
+        "Pole": 0.30039525691699603,
+        "Road": 0.8200731307527424,
+        "Ground": 0.22066822066822067,
+        "Sidewalk": 0.4418862076599513,
+        "Vegetation": 0.42622241453916054,
+        "Vehicle": 0.6014877789585548
+      }
+    },
+    {
+      "sequence": "Town10_Medium",
+      "frame": "000900",
+      "run_path": "completion-town10-medium-000900/run.json",
+      "valid_voxels": 116786,
+      "ignored_voxels": 14286,
+      "observed_occupied_voxels": 6487,
+      "elapsed_s": 15.254,
+      "occupancy_iou": 0.8529174942294272,
+      "semantic_miou": 0.3776800450182061,
+      "classes_in_miou": 10,
+      "class_iou": {
+        "Building": 0.500180701120347,
+        "Barrier": 0.0,
+        "Other": 0.28187919463087246,
+        "Pedestrian": 0.0,
+        "Pole": 0.4847161572052402,
+        "Road": 0.8416149068322981,
+        "Ground": 0.0425531914893617,
+        "Sidewalk": 0.7691156149239982,
+        "Vegetation": 0.28901734104046245,
+        "Vehicle": 0.5677233429394812
+      }
+    },
+    {
+      "sequence": "Town10_Light",
+      "frame": "000300",
+      "run_path": "completion-town10-light-000300/run.json",
+      "valid_voxels": 120519,
+      "ignored_voxels": 10553,
+      "observed_occupied_voxels": 7107,
+      "elapsed_s": 15.216,
+      "occupancy_iou": 0.8359858532272325,
+      "semantic_miou": 0.3166564230110326,
+      "classes_in_miou": 10,
+      "class_iou": {
+        "Building": 0.2568060623070446,
+        "Barrier": 0.0,
+        "Other": 0.38370565045992117,
+        "Pedestrian": 0.0,
+        "Pole": 0.34183673469387754,
+        "Road": 0.9285486950986632,
+        "Ground": 0.021671826625386997,
+        "Sidewalk": 0.8836767895878525,
+        "Vegetation": 0.0,
+        "Vehicle": 0.3503184713375796
+      }
+    },
+    {
+      "sequence": "Town10_Light",
+      "frame": "001200",
+      "run_path": "completion-town10-light-001200/run.json",
+      "valid_voxels": 113801,
+      "ignored_voxels": 17271,
+      "observed_occupied_voxels": 7094,
+      "elapsed_s": 15.314,
+      "occupancy_iou": 0.8317889027008701,
+      "semantic_miou": 0.3312591378840258,
+      "classes_in_miou": 10,
+      "class_iou": {
+        "Building": 0.21817343173431733,
+        "Barrier": 0.0,
+        "Other": 0.15111695137976347,
+        "Pedestrian": 0.625,
+        "Pole": 0.32558139534883723,
+        "Road": 0.8859039836567927,
+        "Ground": 0.07381889763779527,
+        "Sidewalk": 0.6503151548369416,
+        "Vegetation": 0.38268156424581007,
+        "Vehicle": 0.0
+      }
+    }
+  ],
+  "pooled": {
+    "frame_count": 5,
+    "valid_voxels": 574206,
+    "ignored_voxels": 81154,
+    "occupancy_tp": 76540,
+    "occupancy_fp": 4773,
+    "occupancy_fn": 12562,
+    "occupancy_iou": 0.8153395472703062,
+    "semantic_miou": 0.4030362665961119,
+    "per_class_iou": [
+      {
+        "id": 1,
+        "name": "Building",
+        "intersection": 5554,
+        "union": 15394,
+        "ground_truth_voxels": 13429,
+        "predicted_voxels": 7519,
+        "iou": 0.36078991814992856
+      },
+      {
+        "id": 2,
+        "name": "Barrier",
+        "intersection": 0,
+        "union": 1632,
+        "ground_truth_voxels": 0,
+        "predicted_voxels": 1632,
+        "iou": 0.0
+      },
+      {
+        "id": 3,
+        "name": "Other",
+        "intersection": 766,
+        "union": 3563,
+        "ground_truth_voxels": 2906,
+        "predicted_voxels": 1423,
+        "iou": 0.21498737019365702
+      },
+      {
+        "id": 4,
+        "name": "Pedestrian",
+        "intersection": 120,
+        "union": 259,
+        "ground_truth_voxels": 217,
+        "predicted_voxels": 162,
+        "iou": 0.46332046332046334
+      },
+      {
+        "id": 5,
+        "name": "Pole",
+        "intersection": 383,
+        "union": 1060,
+        "ground_truth_voxels": 522,
+        "predicted_voxels": 921,
+        "iou": 0.3613207547169811
+      },
+      {
+        "id": 6,
+        "name": "Road",
+        "intersection": 33511,
+        "union": 39052,
+        "ground_truth_voxels": 36256,
+        "predicted_voxels": 36307,
+        "iou": 0.8581122605756427
+      },
+      {
+        "id": 7,
+        "name": "Ground",
+        "intersection": 651,
+        "union": 4036,
+        "ground_truth_voxels": 1364,
+        "predicted_voxels": 3323,
+        "iou": 0.16129831516352824
+      },
+      {
+        "id": 8,
+        "name": "Sidewalk",
+        "intersection": 22235,
+        "union": 30755,
+        "ground_truth_voxels": 28213,
+        "predicted_voxels": 24777,
+        "iou": 0.7229718744919525
+      },
+      {
+        "id": 9,
+        "name": "Vegetation",
+        "intersection": 1720,
+        "union": 4630,
+        "ground_truth_voxels": 3313,
+        "predicted_voxels": 3037,
+        "iou": 0.3714902807775378
+      },
+      {
+        "id": 10,
+        "name": "Vehicle",
+        "intersection": 1734,
+        "union": 3360,
+        "ground_truth_voxels": 2882,
+        "predicted_voxels": 2212,
+        "iou": 0.5160714285714286
+      }
+    ]
+  },
+  "aggregation": "Sum voxel intersections and unions over the fixed frames before dividing; then average pooled nonempty semantic class IoUs."
+}

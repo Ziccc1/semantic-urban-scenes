@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "method": "scene_scale_diffusion",
+  "sample_id": "carla-seed-7392",
+  "task": "generation",
+  "provenance": {
+    "dataset": "CarlaSC Cartesian",
+    "code_version": "a23745f37eddedefbf9b6069a0af8ec8b4d0f830",
+    "weights": "discrete_diffusion.tar",
+    "config_path": "source/config.json",
+    "log_path": "source/run.json"
+  },
+  "labels": [
+    {
+      "id": 0,
+      "name": "Free",
+      "color": "#FFFFFF",
+      "role": "empty"
+    },
+    {
+      "id": 1,
+      "name": "Building",
+      "color": "#FFC800",
+      "role": "semantic"
+    },
+    {
+      "id": 2,
+      "name": "Barrier",
+      "color": "#FF7832",
+      "role": "semantic"
+    },
+    {
+      "id": 3,
+      "name": "Other",
+      "color": "#375A50",
+      "role": "semantic"
+    },
+    {
+      "id": 4,
+      "name": "Pedestrian",
+      "color": "#FF1E1E",
+      "role": "semantic"
+    },
+    {
+      "id": 5,
+      "name": "Pole",
+      "color": "#FFF096",
+      "role": "semantic"
+    },
+    {
+      "id": 6,
+      "name": "Road",
+      "color": "#FF00FF",
+      "role": "semantic"
+    },
+    {
+      "id": 7,
+      "name": "Ground",
+      "color": "#AF004B",
+      "role": "semantic"
+    },
+    {
+      "id": 8,
+      "name": "Sidewalk",
+      "color": "#4B004B",
+      "role": "semantic"
+    },
+    {
+      "id": 9,
+      "name": "Vegetation",
+      "color": "#00AF00",
+      "role": "semantic"
+    },
+    {
+      "id": 10,
+      "name": "Vehicle",
+      "color": "#6496F5",
+      "role": "semantic"
+    }
+  ],
+  "states": [
+    {
+      "id": "generated",
+      "role": "output",
+      "format": "voxel_points_json",
+      "path": "display/generated.json",
+      "native_path": "source/voxels.npy",
+      "native_axis_order": [
+        "x",
+        "y",
+        "z"
+      ],
+      "native_shape_xyz": [
+        128,
+        128,
+        8
+      ],
+      "native_voxel_size_xyz": [
+        0.4,
+        0.4,
+        0.375
+      ],
+      "coordinate_transform": {
+        "native_frame": "CARLA ego sensor, left-handed, x forward, y right, z up",
+        "display_frame": "right-handed, x forward, y left, z up",
+        "unit": "m",
+        "native_min_bound_xyz": [
+          -25.6,
+          -25.6,
+          -2.0
+        ],
+        "axis_sign_xyz": [
+          1,
+          -1,
+          1
+        ],
+        "index_to_center": "display_xyz = (native_min_bound_xyz + (index_xyz + 0.5) * native_voxel_size_xyz) * axis_sign_xyz"
+      }
+    }
+  ]
+}
