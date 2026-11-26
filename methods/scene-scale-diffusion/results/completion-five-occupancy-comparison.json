@@ -1,0 +1,176 @@
+{
+  "frame_count": 5,
+  "frames": [
+    {
+      "scene": "Cartesian/Test/Town10_Heavy/cartesian",
+      "frame": "000000",
+      "valid_voxels": 119994,
+      "lidar_only": {
+        "tp": 7273,
+        "fp": 291,
+        "fn": 11377,
+        "iou": 0.38398183834010874,
+        "precision": 0.9615282919090429,
+        "recall": 0.38997319034852546
+      },
+      "completion": {
+        "tp": 16286,
+        "fp": 1217,
+        "fn": 2364,
+        "iou": 0.8197513464539186,
+        "precision": 0.9304690624464378,
+        "recall": 0.8732439678284182
+      },
+      "completion_without_lidar_hit": {
+        "tp": 9183,
+        "fp": 1047,
+        "fn": 2194,
+        "iou": 0.7391339343206696,
+        "precision": 0.8976539589442816,
+        "recall": 0.8071547859716973
+      }
+    },
+    {
+      "scene": "Cartesian/Test/Town10_Heavy/cartesian",
+      "frame": "000600",
+      "valid_voxels": 103106,
+      "lidar_only": {
+        "tp": 5788,
+        "fp": 153,
+        "fn": 12634,
+        "iou": 0.31160161507402423,
+        "precision": 0.9742467598047466,
+        "recall": 0.3141895559656932
+      },
+      "completion": {
+        "tp": 14516,
+        "fp": 1163,
+        "fn": 3906,
+        "iou": 0.7411794740873117,
+        "precision": 0.9258243510427961,
+        "recall": 0.7879709043534904
+      },
+      "completion_without_lidar_hit": {
+        "tp": 8891,
+        "fp": 1069,
+        "fn": 3743,
+        "iou": 0.6488360213092024,
+        "precision": 0.8926706827309236,
+        "recall": 0.7037359506094665
+      }
+    },
+    {
+      "scene": "Cartesian/Test/Town10_Medium/cartesian",
+      "frame": "000900",
+      "valid_voxels": 116786,
+      "lidar_only": {
+        "tp": 6373,
+        "fp": 114,
+        "fn": 11464,
+        "iou": 0.35502200434516185,
+        "precision": 0.9824263912440265,
+        "recall": 0.3572910242753826
+      },
+      "completion": {
+        "tp": 15889,
+        "fp": 792,
+        "fn": 1948,
+        "iou": 0.8529174942294272,
+        "precision": 0.9525208320844074,
+        "recall": 0.8907888097774289
+      },
+      "completion_without_lidar_hit": {
+        "tp": 9624,
+        "fp": 724,
+        "fn": 1840,
+        "iou": 0.7896291434197571,
+        "precision": 0.9300347893312717,
+        "recall": 0.8394975575715282
+      }
+    },
+    {
+      "scene": "Cartesian/Test/Town10_Light/cartesian",
+      "frame": "000300",
+      "valid_voxels": 120519,
+      "lidar_only": {
+        "tp": 6891,
+        "fp": 216,
+        "fn": 10465,
+        "iou": 0.3921579786023219,
+        "precision": 0.9696074292950612,
+        "recall": 0.39703848813090575
+      },
+      "completion": {
+        "tp": 15128,
+        "fp": 740,
+        "fn": 2228,
+        "iou": 0.8359858532272325,
+        "precision": 0.9533652634232418,
+        "recall": 0.8716294076976262
+      },
+      "completion_without_lidar_hit": {
+        "tp": 8337,
+        "fp": 637,
+        "fn": 2128,
+        "iou": 0.7509457755359394,
+        "precision": 0.9290171606864275,
+        "recall": 0.7966555183946489
+      }
+    },
+    {
+      "scene": "Cartesian/Test/Town10_Light/cartesian",
+      "frame": "001200",
+      "valid_voxels": 113801,
+      "lidar_only": {
+        "tp": 7019,
+        "fp": 75,
+        "fn": 9818,
+        "iou": 0.41503074739829704,
+        "precision": 0.9894276853679166,
+        "recall": 0.41687949159589
+      },
+      "completion": {
+        "tp": 14721,
+        "fp": 861,
+        "fn": 2116,
+        "iou": 0.8317889027008701,
+        "precision": 0.944743935309973,
+        "recall": 0.8743244045851398
+      },
+      "completion_without_lidar_hit": {
+        "tp": 7827,
+        "fp": 804,
+        "fn": 1991,
+        "iou": 0.7368668800602524,
+        "precision": 0.9068474104970455,
+        "recall": 0.7972092075779181
+      }
+    }
+  ],
+  "pooled": {
+    "lidar_only": {
+      "tp": 33344,
+      "fp": 849,
+      "fn": 55758,
+      "iou": 0.3706907093862214,
+      "precision": 0.9751703565057176,
+      "recall": 0.3742228008349981
+    },
+    "completion": {
+      "tp": 76540,
+      "fp": 4773,
+      "fn": 12562,
+      "iou": 0.8153395472703062,
+      "precision": 0.9413008989952406,
+      "recall": 0.8590155103140221
+    },
+    "completion_without_lidar_hit": {
+      "tp": 43862,
+      "fp": 4281,
+      "fn": 11896,
+      "iou": 0.7305584703276203,
+      "precision": 0.9110774152005484,
+      "recall": 0.7866494494063632
+    }
+  }
+}

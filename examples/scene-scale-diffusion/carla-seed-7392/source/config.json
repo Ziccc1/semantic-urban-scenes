@@ -1,0 +1,38 @@
+{
+  "sample_id": "carla-seed-7392",
+  "seed": 7392,
+  "batch_size": 1,
+  "diffusion_steps": 100,
+  "native_dtype": "int64",
+  "native_axis_order": [
+    "x",
+    "y",
+    "z"
+  ],
+  "native_shape_xyz": [
+    128,
+    128,
+    8
+  ],
+  "native_voxel_size_xyz": [
+    0.4,
+    0.4,
+    0.375
+  ],
+  "coordinate_transform": {
+    "native_frame": "CARLA ego sensor, left-handed, x forward, y right, z up",
+    "display_frame": "right-handed, x forward, y left, z up",
+    "unit": "m",
+    "native_min_bound_xyz": [
+      -25.6,
+      -25.6,
+      -2.0
+    ],
+    "axis_sign_xyz": [
+      1,
+      -1,
+      1
+    ],
+    "index_to_center": "display_xyz = (native_min_bound_xyz + (index_xyz + 0.5) * native_voxel_size_xyz) * axis_sign_xyz"
+  }
+}
