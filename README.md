@@ -2,6 +2,8 @@
 
 四种方法的代表功能复现、PrITTI 连续扩展对照，以及读取离线样例的三维展示平台。
 
+Scene-Scale Diffusion 的已完成工作、结果图片和样例入口见 [zlr 成果与交接](methods/scene-scale-diffusion/成果概览_zlr.md)。
+
 ## 目录
 
 | 路径 | 内容 | 维护人 |
