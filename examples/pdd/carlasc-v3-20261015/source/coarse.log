@@ -1,0 +1,11 @@
+SEED 20261015
+ENV Python 3.9.25, PyTorch 2.7.1+cu118, CUDA 11.8, NVIDIA GeForce RTX 4060 Laptop GPU
+PDD upstream\utils\args_process.py:36: UserWarning: You have chosen a specific GPU. This will completely disable DDP.
+  warnings.warn('You have chosen a specific GPU. This will completely disable DDP.')
+Storing logs in: generated\sample
+=> loaded checkpoint 'infere_s_1.tar'
+Scenes will be generated.
+Working on generation process: 1 / 1
+Generation process finished.
+CUDA_PEAK_ALLOCATED_MIB 708.46
+CUDA_PEAK_RESERVED_MIB 756.00

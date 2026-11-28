@@ -1,0 +1,9 @@
+{
+  "scenes": 12,
+  "improved_scenes": 12,
+  "before_empty_total": 11229,
+  "after_empty_total": 9766,
+  "before_seam_empty_total": 2326,
+  "after_seam_empty_total": 1941,
+  "all_previously_occupied_columns_unchanged": true
+}

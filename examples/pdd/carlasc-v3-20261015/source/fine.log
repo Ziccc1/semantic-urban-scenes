@@ -1,0 +1,51 @@
+{
+  "runtime": {
+    "generation_seconds": 92.79,
+    "peak_allocated_mib": 855.1,
+    "checkpoint_sha256": "ffa9ca5f156774785663675eef82f9aaeb6a24cdb332b7bf7bd19850a459e214",
+    "condition_sha256": "6fc0aac4ea85babe5c1839719a30dd2d0d9e1827966d1366191896289060343b"
+  },
+  "comparison": {
+    "seed": 20261015,
+    "coverage": 65536,
+    "conditions_verified": true,
+    "neighbor_masks_verified": true,
+    "center_native_columns_verified": true,
+    "metrics": {
+      "v1": {
+        "condition_road_columns": 14281,
+        "candidate_empty_road_columns": 809,
+        "candidate_empty_road_ratio": 0.056648694069042785,
+        "common_seam_road_columns": 3735,
+        "common_seam_empty_road_columns": 120,
+        "road_column_condition_iou": 0.893099625883331,
+        "vehicle_voxels_in_condition_roi": 75,
+        "vehicle_voxels_total": 84,
+        "occupied_voxels": 50498
+      },
+      "center": {
+        "condition_road_columns": 14281,
+        "candidate_empty_road_columns": 609,
+        "candidate_empty_road_ratio": 0.0426440725439395,
+        "common_seam_road_columns": 3735,
+        "common_seam_empty_road_columns": 71,
+        "road_column_condition_iou": 0.9183475428016913,
+        "vehicle_voxels_in_condition_roi": 175,
+        "vehicle_voxels_total": 176,
+        "occupied_voxels": 49825
+      },
+      "vote": {
+        "condition_road_columns": 14281,
+        "candidate_empty_road_columns": 599,
+        "candidate_empty_road_ratio": 0.04194384146768434,
+        "common_seam_road_columns": 3735,
+        "common_seam_empty_road_columns": 68,
+        "road_column_condition_iou": 0.9181477367397946,
+        "vehicle_voxels_in_condition_roi": 175,
+        "vehicle_voxels_total": 176,
+        "occupied_voxels": 49802
+      }
+    },
+    "note": "Diagnostics against coarse conditions, not GT accuracy or paper evaluator metrics."
+  }
+}

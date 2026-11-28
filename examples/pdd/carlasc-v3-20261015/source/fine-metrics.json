@@ -1,0 +1,373 @@
+{
+  "generation_seconds": 92.79,
+  "peak_allocated_mib": 855.1,
+  "checkpoint_sha256": "ffa9ca5f156774785663675eef82f9aaeb6a24cdb332b7bf7bd19850a459e214",
+  "condition_sha256": "6fc0aac4ea85babe5c1839719a30dd2d0d9e1827966d1366191896289060343b",
+  "stage": "s3",
+  "seed": 20261015,
+  "exit_code": 0,
+  "missing_outputs": [],
+  "variant": "source-supported-small-gaps-v3",
+  "wall_time_seconds": 92.79,
+  "torch_cuda_peak_allocated_mib": 855.1,
+  "generated_xy_cells": 65536,
+  "output_sha256": "1ac2a7ae32f60bfbd8cff19216af29894a2e4c308c8fd00a8b83300c04a65fc7",
+  "source_run": "seam-v2-seed20261015",
+  "base_name": "center",
+  "strict_road_stack": false,
+  "coverage_xy": 65536,
+  "previously_occupied_columns_unchanged": true,
+  "all_changes_are_native_prediction_columns": true,
+  "base_array_sha256": "e5accf30c49091da14e4137908f60319ecc112005550a3362d2ab40d90dfcfe1",
+  "source_prediction_hashes": [
+    "7c9a0e51d9937614e8aa350193b9f09f8c67a3b12028730b1380a93bf4274627",
+    "24fbc83742624bb1a1a0dac55e0fe0da425f5ff874a39b20ebe92205f9c00c92",
+    "a1d3d460807fcc44c22682dfd6e67df45cc0aef48c9d55364bf8b66ed292573e",
+    "52088ca1968cac81e8f92412e8a0f0aab583c23d4474718c5fe085bfc287897a",
+    "13c740e7cb86803aeb199066f32cf7a98bccc150f2212e0dc539e0ebef6e7d1b",
+    "4a63bcf588acd1bb1de1a156314b2e3b0672ab849c3bcae9262d2987e00f077b",
+    "a631276d2a6f2f50641c6c086a42a3f7db7d39fee3d873bef70111059688b225",
+    "3a2d5e3d1c822fdda8dae6f008d6b15cfa30c9bad60ef0150b2ec79ba448c49d",
+    "7e72b3649b0eb8c7c37fb4b32d51b9142abdfa63452e2785bf6756d66ee70a3a"
+  ],
+  "before": {
+    "condition_road_columns": 14281,
+    "candidate_empty_road_columns": 609,
+    "candidate_empty_road_ratio": 0.0426440725439395,
+    "common_seam_road_columns": 3735,
+    "common_seam_empty_road_columns": 71,
+    "road_column_condition_iou": 0.9183475428016913,
+    "vehicle_voxels_in_condition_roi": 175,
+    "vehicle_voxels_total": 176,
+    "occupied_voxels": 49825,
+    "empty_components": 148,
+    "largest_empty_component": 191
+  },
+  "after": {
+    "condition_road_columns": 14281,
+    "candidate_empty_road_columns": 581,
+    "candidate_empty_road_ratio": 0.04068342553042504,
+    "common_seam_road_columns": 3735,
+    "common_seam_empty_road_columns": 64,
+    "road_column_condition_iou": 0.9202883482359465,
+    "vehicle_voxels_in_condition_roi": 175,
+    "vehicle_voxels_total": 176,
+    "occupied_voxels": 49880,
+    "empty_components": 123,
+    "largest_empty_component": 191
+  },
+  "replacement": {
+    "eligible_small_empty_columns": 211,
+    "replaced_columns": 28,
+    "repairs": [
+      {
+        "xy": [
+          99,
+          93
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0
+        ]
+      },
+      {
+        "xy": [
+          100,
+          103
+        ],
+        "source_tile": 3,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          103,
+          94
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          106,
+          104
+        ],
+        "source_tile": 7,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          106,
+          160
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          108,
+          90
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          109,
+          98
+        ],
+        "source_tile": 7,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          111,
+          103
+        ],
+        "source_tile": 7,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          113,
+          66
+        ],
+        "source_tile": 6,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          114,
+          72
+        ],
+        "source_tile": 6,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          116,
+          67
+        ],
+        "source_tile": 6,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          117,
+          80
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          118,
+          65
+        ],
+        "source_tile": 6,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          118,
+          70
+        ],
+        "source_tile": 6,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          122,
+          84
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          123,
+          84
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          123,
+          74
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          124,
+          76
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          124,
+          91
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          126,
+          86
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          128,
+          74
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          128,
+          82
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          131,
+          79
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          133,
+          77
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          135,
+          85
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          136,
+          86
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          137,
+          84
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      },
+      {
+        "xy": [
+          137,
+          166
+        ],
+        "source_tile": 4,
+        "road_z": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "seconds": 0.33
+}

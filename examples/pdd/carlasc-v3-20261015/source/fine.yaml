@@ -1,0 +1,84 @@
+prev_stage: s_2
+next_stage: s_3
+resume: true
+resume_path: infere_s_2_to_s_3.tar
+generation_num: 1
+mode: inference
+infer_data_source: generation
+prev_scene_path: condition
+scene_fusion_method: discard
+mask_ratio: 0.0625
+infinite_ratio: 0.1875
+mask_prob:
+- 0.25
+- 0.25
+- 0.25
+- 0.25
+infinity_size:
+- 3
+- 2
+dataset: carla
+train_data_path: ''
+quantized_train_data_path: ''
+infer_data_path: Train
+quantized_infer_data_path: Train
+data_argumentation: false
+gpu: 0
+distribution: false
+num_node: 1
+node_rank: 0
+dist_url: tcp://localhost:29500
+batch_size: 1
+num_workers: 0
+pin_memory: false
+epochs: 1000
+check_every: 100
+clip_value: null
+clip_norm: null
+recon_loss: false
+auxiliary_loss_weight: 0.0005
+optimizer: adamw
+lr: 0.004
+warmup: null
+momentum: 0.9
+momentum_sqr: 0.999
+milestones: []
+gamma: 0.1
+model_type: con
+diffusion_steps: 100
+diffusion_dim: 32
+dp_rate: 0.0
+l_size: '32322'
+init_size: 8
+l_attention: true
+vq_size: 50
+vqvae_path: ''
+log_home: null
+exp_name: default
+variant: in-domain-nine-tiles-v2
+source_offsets_xy:
+- - 0
+  - 128
+- - 64
+  - 128
+- - 128
+  - 128
+- - 0
+  - 64
+- - 64
+  - 64
+- - 128
+  - 64
+- - 0
+  - 0
+- - 64
+  - 0
+- - 128
+  - 0
+seed: 20261015
+tile_seed: 22261015
+mask_width: 8
+native_to_scene_index_offset_xyz:
+- 0
+- 0
+- 0
