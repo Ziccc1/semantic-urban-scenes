@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDD 三尺度样例试读</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div><h1>PDD 三尺度样例</h1><p>CarlaSC · V3 主样例</p></div>
+  </header>
+  <main>
+    <section class="workspace" aria-label="三维场景查看">
+      <div class="toolbar">
+        <div class="switch" role="group" aria-label="生成尺度">
+          <button data-scale="coarse" aria-pressed="true">粗尺度</button>
+          <button data-scale="medium" aria-pressed="false">中尺度</button>
+          <button data-scale="fine" aria-pressed="false">细尺度</button>
+        </div>
+        <div class="views" role="group" aria-label="观察方式">
+          <button id="orbit" aria-pressed="true">三维</button>
+          <button id="top" aria-pressed="false">俯视</button>
+          <button id="reset">复位</button>
+        </div>
+      </div>
+      <div class="viewport">
+        <canvas id="scene" tabindex="0" aria-label="语义体素场景。左右方向键旋转，上下方向键调整俯仰，减号缩小，等号放大。"></canvas>
+        <p id="status" role="status" aria-live="polite">正在读取样例…</p>
+        <span class="axis-note">右手坐标系 · +Z 向上 · 米</span>
+      </div>
+      <div class="legend" id="legend" aria-label="显示类别"></div>
+      <p class="interaction">拖动旋转 · 滚轮缩放 · 方向键调整视角 · 切换尺度保持当前视角</p>
+    </section>
+    <aside>
+      <h2>当前状态</h2>
+      <dl>
+        <div><dt>样例</dt><dd id="sample-id">—</dd></div>
+        <div><dt>网格</dt><dd id="shape">—</dd></div>
+        <div><dt>体素尺寸 / m</dt><dd id="voxel-size">—</dd></div>
+        <div><dt>占据体素</dt><dd id="count">—</dd></div>
+        <div><dt>场景范围 / m</dt><dd>51.2 × 51.2 × 3</dd></div>
+      </dl>
+      <section class="coverage">
+        <h2>覆盖范围</h2>
+        <p id="coverage-note">—</p>
+      </section>
+      <section class="sources">
+        <h2>原始记录</h2>
+        <a id="native">原生体素 TXT</a>
+        <a id="config">推理配置</a>
+        <a id="log">运行日志</a>
+        <a id="manifest">样例 manifest</a>
+        <a href="../results/three-scales-v3.png">同视角结果图</a>
+      </section>
+      <p class="scope">PDD 样例自测入口。组内平台接收与验收另行登记。</p>
+    </aside>
+  </main>
+  <script type="module" src="viewer.js"></script>
+</body>
+</html>

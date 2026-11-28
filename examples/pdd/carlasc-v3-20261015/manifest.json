@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "method": "pdd",
+  "sample_id": "carlasc-v3-20261015",
+  "task": "generation",
+  "provenance": {
+    "dataset": "CarlaSC Cartesian Finer",
+    "code_version": "local-source-sha256:1caf8ddba08897b184f1ca7ab0752315c74d1de544a1d3b9b2c18b45673cb67a",
+    "weights": {
+      "coarse": {
+        "file": "infere_s_1.tar",
+        "sha256": "818931725ac8b1b497c5e0fca57ca56293629e4902eaff9d6df2b9d3238d4a61"
+      },
+      "medium": {
+        "file": "infere_s_1_to_s_2.tar",
+        "sha256": "530a41ec772d00e2882c3046155c60df3ed4eab5e8f98b2901e5ea1e9c08e3ec"
+      },
+      "fine": {
+        "file": "infere_s_2_to_s_3.tar",
+        "sha256": "ffa9ca5f156774785663675eef82f9aaeb6a24cdb332b7bf7bd19850a459e214"
+      }
+    },
+    "config_path": "source/coarse.yaml",
+    "log_path": "source/coarse.log"
+  },
+  "coordinates": {
+    "unit": "m",
+    "handedness": "right",
+    "up": "+Z",
+    "grid_min_xyz": [
+      -25.6,
+      -25.6,
+      -2.0
+    ],
+    "extent_xyz": [
+      51.2,
+      51.2,
+      3.0
+    ],
+    "conversion": "Scene-local XYZ follows the official visualizer index order. Center = grid_min + (index + state index offset + 0.5) * voxel_size. Nominal CarlaSC extent. No cross-method pose registration."
+  },
+  "labels": [
+    {
+      "id": 0,
+      "name": "Free",
+      "role": "empty",
+      "color": "#FFFFFF"
+    },
+    {
+      "id": 1,
+      "name": "Building",
+      "role": "semantic",
+      "color": "#FFC800"
+    },
+    {
+      "id": 2,
+      "name": "Barrier",
+      "role": "semantic",
+      "color": "#FF7832"
+    },
+    {
+      "id": 3,
+      "name": "Other",
+      "role": "semantic",
+      "color": "#375A50"
+    },
+    {
+      "id": 4,
+      "name": "Pedestrian",
+      "role": "semantic",
+      "color": "#FF1E1E"
+    },
+    {
+      "id": 5,
+      "name": "Pole",
+      "role": "semantic",
+      "color": "#FFF096"
+    },
+    {
+      "id": 6,
+      "name": "Road",
+      "role": "semantic",
+      "color": "#FF00FF"
+    },
+    {
+      "id": 7,
+      "name": "Ground",
+      "role": "semantic",
+      "color": "#AF004B"
+    },
+    {
+      "id": 8,
+      "name": "Sidewalk",
+      "role": "semantic",
+      "color": "#4B004B"
+    },
+    {
+      "id": 9,
+      "name": "Vegetation",
+      "role": "semantic",
+      "color": "#00AF00"
+    },
+    {
+      "id": 10,
+      "name": "Vehicle",
+      "role": "semantic",
+      "color": "#6496F5"
+    }
+  ],
+  "states": [
+    {
+      "id": "coarse",
+      "role": "coarse",
+      "format": "voxel_points_json",
+      "path": "display/coarse.json",
+      "native_path": "source/coarse.txt",
+      "native_order": [
+        "label",
+        "x",
+        "y",
+        "z"
+      ],
+      "native_shape_xyz": [
+        32,
+        32,
+        4
+      ],
+      "config_path": "source/coarse.yaml",
+      "log_path": "source/coarse.log",
+      "coverage_variant": "official-default",
+      "native_to_scene_index_offset_xyz": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "medium",
+      "role": "medium",
+      "format": "voxel_points_json",
+      "path": "display/medium.json",
+      "native_path": "source/medium.txt",
+      "native_order": [
+        "label",
+        "x",
+        "y",
+        "z"
+      ],
+      "native_shape_xyz": [
+        64,
+        64,
+        8
+      ],
+      "config_path": "source/medium.yaml",
+      "log_path": "source/medium.log",
+      "coverage_variant": "official-default",
+      "native_to_scene_index_offset_xyz": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "fine",
+      "role": "fine",
+      "format": "voxel_points_json",
+      "path": "display/fine.json",
+      "native_path": "source/fine.txt",
+      "native_order": [
+        "label",
+        "x",
+        "y",
+        "z"
+      ],
+      "native_shape_xyz": [
+        256,
+        256,
+        16
+      ],
+      "config_path": "source/fine.yaml",
+      "log_path": "source/fine.log",
+      "coverage_variant": "source-supported-small-gaps-v3",
+      "native_to_scene_index_offset_xyz": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "regions": []
+}

@@ -1,0 +1,38 @@
+{
+  "sample_id": "carlasc-v3-20261015",
+  "chain_condition_hashes_verified": true,
+  "display_points_verified": true,
+  "v3_native_replay_exact": true,
+  "states": [
+    {
+      "role": "coarse",
+      "shape": [
+        32,
+        32,
+        4
+      ],
+      "voxel_count": 951,
+      "sha256": "a36187a1e660c5652bc4baea1dd20003d5f190fe16212408aec356732f36a6d5"
+    },
+    {
+      "role": "medium",
+      "shape": [
+        64,
+        64,
+        8
+      ],
+      "voxel_count": 3615,
+      "sha256": "6fc0aac4ea85babe5c1839719a30dd2d0d9e1827966d1366191896289060343b"
+    },
+    {
+      "role": "fine",
+      "shape": [
+        256,
+        256,
+        16
+      ],
+      "voxel_count": 49880,
+      "sha256": "1ac2a7ae32f60bfbd8cff19216af29894a2e4c308c8fd00a8b83300c04a65fc7"
+    }
+  ]
+}

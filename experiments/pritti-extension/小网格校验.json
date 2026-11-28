@@ -1,0 +1,43 @@
+{
+  "fixture": "synthetic",
+  "passed": true,
+  "detected": {
+    "seam_axis": 0,
+    "seam_edge": 2,
+    "height_threshold_m": 0.25,
+    "comparable_pairs": 3,
+    "road_pairs": 2,
+    "road_match_fraction": 0.5,
+    "road_mismatch_along_seam": [
+      1
+    ],
+    "height_p95_m": 0.44999999999999996,
+    "height_jump_along_seam": [
+      0
+    ],
+    "protected_cells": 6,
+    "protected_changed_fraction": 0.16666666666666666,
+    "protected_changed_xy": [
+      [
+        0,
+        2
+      ]
+    ],
+    "human_reviewed": false
+  },
+  "empty_regions": {
+    "seam_axis": 0,
+    "seam_edge": 2,
+    "height_threshold_m": 0.25,
+    "comparable_pairs": 0,
+    "road_pairs": 0,
+    "road_match_fraction": null,
+    "road_mismatch_along_seam": [],
+    "height_p95_m": null,
+    "height_jump_along_seam": [],
+    "protected_cells": 0,
+    "protected_changed_fraction": null,
+    "protected_changed_xy": [],
+    "human_reviewed": false
+  }
+}

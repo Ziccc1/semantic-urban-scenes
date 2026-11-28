@@ -4,6 +4,8 @@
 
 Scene-Scale Diffusion 的已完成工作、结果图片和样例入口见 [zlr 成果与交接](methods/scene-scale-diffusion/成果概览_zlr.md)。
 
+PDD 的三尺度结果、原始数据和检视入口见 [PDD 成果与交接](methods/pdd/成果与交接.md)。
+
 ## 目录
 
 | 路径 | 内容 | 维护人 |

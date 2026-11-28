@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "browser": "Edge headless with SwiftShader software WebGL2",
+  "offline_files_only": true,
+  "states": [
+    {
+      "scale": "coarse",
+      "count": 951,
+      "sample_id": "carlasc-v3-20261015",
+      "shape": "32 × 32 × 4",
+      "native": "http://pdd.local.test/examples/pdd/carlasc-v3-20261015/source/coarse.txt",
+      "webgl2": true,
+      "gl_error": 0,
+      "lost": false
+    },
+    {
+      "scale": "medium",
+      "count": 3615,
+      "sample_id": "carlasc-v3-20261015",
+      "shape": "64 × 64 × 8",
+      "native": "http://pdd.local.test/examples/pdd/carlasc-v3-20261015/source/medium.txt",
+      "webgl2": true,
+      "gl_error": 0,
+      "lost": false
+    },
+    {
+      "scale": "fine",
+      "count": 49880,
+      "sample_id": "carlasc-v3-20261015",
+      "shape": "256 × 256 × 16",
+      "native": "http://pdd.local.test/examples/pdd/carlasc-v3-20261015/source/fine.txt",
+      "webgl2": true,
+      "gl_error": 0,
+      "lost": false
+    }
+  ],
+  "requests": [
+    "/methods/pdd/preview/",
+    "/methods/pdd/preview/style.css",
+    "/methods/pdd/preview/viewer.js",
+    "/methods/pdd/preview/model.js",
+    "/methods/pdd/preview/renderer.js",
+    "/examples/pdd/carlasc-v3-20261015/manifest.json",
+    "/examples/pdd/carlasc-v3-20261015/display/coarse.json",
+    "/examples/pdd/carlasc-v3-20261015/manifest.json",
+    "/examples/pdd/carlasc-v3-20261015/manifest.json",
+    "/examples/pdd/carlasc-v3-20261015/display/medium.json",
+    "/examples/pdd/carlasc-v3-20261015/manifest.json",
+    "/examples/pdd/carlasc-v3-20261015/display/fine.json"
+  ],
+  "page_errors": []
+}

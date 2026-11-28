@@ -1,0 +1,10 @@
+{
+  "stage": "s1",
+  "seed": 20261015,
+  "checkpoint_sha256": "818931725ac8b1b497c5e0fca57ca56293629e4902eaff9d6df2b9d3238d4a61",
+  "exit_code": 0,
+  "wall_time_seconds": 17.38,
+  "torch_cuda_peak_allocated_mib": 708.46,
+  "torch_cuda_peak_reserved_mib": 756.0,
+  "missing_outputs": []
+}
